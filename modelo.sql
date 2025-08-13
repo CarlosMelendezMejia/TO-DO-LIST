@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS tasks (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    content VARCHAR(255) NOT NULL,
+    end_date DATE,
+    category VARCHAR(50),
+    completed BOOLEAN DEFAULT FALSE
+);
