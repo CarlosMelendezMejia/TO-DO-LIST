@@ -5,6 +5,9 @@ from flask_sqlalchemy import SQLAlchemy
 
 db = SQLAlchemy()
 
+# Import models so they are registered with SQLAlchemy
+from .models import User, Role, Permission  # noqa: F401
+
 
 def create_app():
     """Application factory for the Flask app."""
